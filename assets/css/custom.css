@@ -1,0 +1,18 @@
+/* ==========================
+   Global Styles for About Me Image
+========================== */
+
+/* Increase the default font size */
+html {
+    font-size: 13pt;
+  }
+
+
+/* Targets the header logo */
+img[src="/images/code.png"],
+img[src="/images/code-dark.png"]
+{
+   max-height: 2em; /* Set the maximum height to match the font size */
+   max-width: 2em;  /* Ensure it doesn't stretch horizontally */
+   object-fit: contain; /* Keep the aspect ratio */
+}
