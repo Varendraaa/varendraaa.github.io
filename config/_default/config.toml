@@ -3,7 +3,7 @@
 # https://jpanther.github.io/c hugo server -Dongo/docs/getting-started/
 
 theme = 'congo'
-baseURL = "https://varendraaa.github.io/"
+baseURL = "https://varendraaa.github.io"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
