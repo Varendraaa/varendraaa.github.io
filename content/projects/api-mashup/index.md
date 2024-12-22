@@ -17,7 +17,7 @@ tags: ["web-scraping", "nomic", "chunkig", "retriever", "rag", "gabriel-garcia-m
 
 *A web app that combines two APIs to make a useful application*
 
-## **[See the app here](https://varendraaa.github.io/Weather-App-API-Mashup/)**
+**[See the app here](https://varendraaa.github.io/Weather-App-API-Mashup/)**
 
 ## About
 This was my second assignment for my Web Development Module at the University of Dundee.
@@ -35,12 +35,12 @@ Initially, I looked at all freely available API's from this convenient [reposito
 
 I decided on putting together the two aforementioned API's to create an application that allows a user to check both the weather forecast and upcoming events in the area, simply by inputing a designated location. I was also inspired by the Windows 11 Weather app.
 
-![Image: Inspiration for the app](/portfolio/images/projects/API%20Mashup/API-Mashup-1.png)<br>
+![Image: Inspiration for the app](api1.png)<br>
 
 ## Design
 The initial layout was built based on a basic wireframe design of my concept in Mockflow (Figma was not something I was familiar with, nor had time to get familiar with).
 
-![Image: Mockup of the app](/portfolio/images/projects/API%20Mashup/API-Mashup-2.png)
+![Image: Mockup of the app](api4.png)
 
 I initially planned to integrate a geocoding API such as Mapbox API to generate a real-time weather map, but WeatherAPI did not support map tiling so I could not.
 
@@ -60,7 +60,7 @@ I ran into an issue where the API data for the Weather API was very inconsistent
 I also opted for a very basic colour scheme that had good contrast, which was checked using the colour contrast checker from Coolors.co. Some improvements could be made but, being colourblind myself (deuteranopia), I chose safe colours that I could see well.
 
 
-![Image: Mockup of the app](/portfolio/images/projects/API%20Mashup/API-Mashup-3.png)
+![Image: Mockup of the app](api2.png)
 
 
-![Image: Mockup of the app](/portfolio/images/projects/API%20Mashup/API-Mashup-4.png)
+![Image: Mockup of the app](api3.png)

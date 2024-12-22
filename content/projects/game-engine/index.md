@@ -10,6 +10,8 @@ categories: ["software"]
 tags: ["web-scraping", "nomic", "chunkig", "retriever", "rag", "gabriel-garcia-marquez", "llm", "langchain", "chromadb", "retrieval-augmented-generation", "ollama", "llama3-1", "llama3-2"]
 ---
 
+*Developing a custom game and its engine from scratch.*
+
 This is a very summarised overview of my MSc Thesis Project, done at the University of Dundee. It focuses on the creation and development of a Doom-like 3D FPS game, and its underlying engine, completely from first principles. It utilises simple, open-source C++ libraries to support some features, but every other aspect was done manually by the game code.
 
 Since my thesis was over 17 000 words, this project post is not meant to be a deep dive into how I solved or implemented some of the game features. If you're interested in reading it (it's a good read!), shoot me an email.

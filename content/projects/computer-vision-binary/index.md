@@ -9,6 +9,9 @@ showTableofContents: false
 categories: ["software"]
 tags: ["web-scraping", "nomic", "chunkig", "retriever", "rag", "gabriel-garcia-marquez", "llm", "langchain", "chromadb", "retrieval-augmented-generation", "ollama", "llama3-1", "llama3-2"]
 ---
+
+*Using Convoluted Neural Networks to detect signs of diseases in medical images.*
+
 {{< alert "info" >}} 
 I'm currently redoing this project, based on some improvements shown to me by my classmate, Hannah Gordon. I'm also planning to separate the binary classification and multi-class classification into seperate posts for brevity's sake.
 {{< /alert >}}
