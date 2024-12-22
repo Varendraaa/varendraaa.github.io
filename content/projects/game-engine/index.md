@@ -6,6 +6,7 @@ date: 2024-08-21
 lastmod: 2024-10-19
 layout: "simple"
 showTableofContents: false
+images: "game1.png"
 thumbnail: "game1.png"
 categories: ["software"]
 tags: ["web-scraping", "nomic", "chunkig", "retriever", "rag", "gabriel-garcia-marquez", "llm", "langchain", "chromadb", "retrieval-augmented-generation", "ollama", "llama3-1", "llama3-2"]
