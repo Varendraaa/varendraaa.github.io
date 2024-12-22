@@ -12,13 +12,13 @@
   class="scroll-smooth"
   data-default-appearance="light"
   data-auto-appearance="true"
-><head>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#FFFFFF" />
   
-  <title>Doom-like Game Engine Development &middot; VS Codes</title>
-    <meta name="title" content="Doom-like Game Engine Development &middot; VS Codes" />
+  <title>3D Game Engine Development &middot; VS Codes</title>
+    <meta name="title" content="3D Game Engine Development &middot; VS Codes" />
   
   
   
@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="https://varendraaa.github.io/projects/game-engine/" />
+  <link rel="canonical" href="http://localhost:1313/projects/game-engine/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,9 +96,9 @@
   
   
   
-  <meta property="og:url" content="https://varendraaa.github.io/projects/game-engine/">
+  <meta property="og:url" content="http://localhost:1313/projects/game-engine/">
   <meta property="og:site_name" content="VS Codes">
-  <meta property="og:title" content="Doom-like Game Engine Development">
+  <meta property="og:title" content="3D Game Engine Development">
   <meta property="og:description" content="&#39;">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -114,7 +114,7 @@
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Doom-like Game Engine Development">
+  <meta name="twitter:title" content="3D Game Engine Development">
   <meta name="twitter:description" content="&#39;">
 
   
@@ -123,12 +123,12 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Projects",
-    "name": "Doom-like Game Engine Development",
-    "headline": "Doom-like Game Engine Development",
+    "name": "3D Game Engine Development",
+    "headline": "3D Game Engine Development",
     
     "abstract": "\u0027",
     "inLanguage": "en",
-    "url" : "https:\/\/varendraaa.github.io\/projects\/game-engine\/",
+    "url" : "http:\/\/localhost:1313\/projects\/game-engine\/",
     "author" : {
       "@type": "Person",
       "name": "Varendra Saith"
@@ -142,7 +142,7 @@
     "keywords": ["web-scraping","nomic","chunkig","retriever","rag","gabriel-garcia-marquez","llm","langchain","chromadb","retrieval-augmented-generation","ollama","llama3-1","llama3-2"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "533"
+    "wordCount": "1295"
   }
   </script>
     
@@ -153,25 +153,25 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "https://varendraaa.github.io/",
+       "item": "http://localhost:1313/",
        "name": "",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "https://varendraaa.github.io/projects/",
+       "item": "http://localhost:1313/projects/",
        "name": "Projects",
        "position": 2
      },
      {
        "@type": "ListItem",
-       "item": "https://varendraaa.github.io/categories/software/",
+       "item": "http://localhost:1313/categories/software/",
        "name": "Software",
        "position": 3
      },
      {
        "@type": "ListItem",
-       "name": "Doom Like Game Engine Development",
+       "name": "3 D Game Engine Development",
        "position": 4
      }
    ]
@@ -197,11 +197,6 @@
 
   
   
-  
-  
-  
-  
-
 
   
   
@@ -380,45 +375,104 @@
     <header>
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Doom-like Game Engine Development
+        3D Game Engine Development
       </h1>
     </header>
     <section class="prose mt-6 max-w-full dark:prose-invert">
       <p>This is a very summarised overview of my MSc Thesis Project, done at the University of Dundee. It focuses on the creation and development of a Doom-like 3D FPS game, and its underlying engine, completely from first principles. It utilises simple, open-source C++ libraries to support some features, but every other aspect was done manually by the game code.</p>
-<p>Since the thesis itself was over 18000 words, I&rsquo;ll not be going into a similar level of detail here. I&rsquo;ll highlight some of the ways I solved certain complex problems in development. If you&rsquo;re interested in reading it, please do send me a message.</p>
-<h1 id="background" class="relative group">Background <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#background" aria-label="Anchor">#</a></span></h1><p>For my thesis, there were a couple projects I was interested in. I ultimately decided to go with the game engine development for the following reasons:</p>
+<p>Since my thesis was over 17 000 words, this project post is not meant to be a deep dive into how I solved or implemented some of the game features. If you&rsquo;re interested in reading it (it&rsquo;s a good read!), shoot me an email.</p>
+<p><strong><a href="https://github.com/Varendraaa/Shadow" target="_blank" rel="noreferrer">Check out the project code here!</a></strong></p>
+<h2 id="background" class="relative group">Background <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#background" aria-label="Anchor">#</a></span></h2><p>I had a couple projects that I was interested in doing for my thesis project:</p>
+<ul>
+<li>A Spacecraft Mission Visualiser</li>
+<li>A Computer Vision System for Soil Evaluation (the old geoscientist in me was screaming &ldquo;<strong>Put me in chief!</strong>&rdquo;)</li>
+<li>3D Game Engine Development</li>
+</ul>
+<p>I ultimately decided to go with the game engine development for the following reasons:</p>
 <ol>
-<li>It was something I&rsquo;d be motivated to develop, and therefore avoid falling into the trap that is <em>lack of motivation.</em></li>
+<li>It was something I&rsquo;d be excited to develop, and therefore avoid falling into the trap that is <em>lack of motivation.</em></li>
 <li>It offered me the opportunity to learn about graphics programming, specifically about OpenGL.</li>
 <li>It was a <strong>really cool idea.</strong> I mean, I&rsquo;m making a game that people could later play, and enjoy. <strong>EXTREMELY DOPE.</strong></li>
 </ol>
-<p>However, I severely underestimated the sheer amount of work required to get a good game going. I had a development window of around 8 weeks max, and I ended up working maybe 12-15 hours a day, learning as I went along.</p>
-<h1 id="development" class="relative group">Development <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#development" aria-label="Anchor">#</a></span></h1><h2 id="initial-setup" class="relative group">Initial Setup <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#initial-setup" aria-label="Anchor">#</a></span></h2><p>My project ran over a 12 week timeline, from May 23rd 2024 to August 22 2024, but that also included the thesis write-up, poster creation and presentation preparation. My supervisor, Dr. Iain Martin, and I set out a goal of getting the core game done within 8-9 weeks, to allow enough time for revision, modification and other improvements.</p>
-<p>The first couple weeks was spent getting up to speed with understanding OpenGL and the graphics pipeline. This was paramount since I&rsquo;d need to learn how to manipulate objects throughout the pipeline if I ever wanted to even display a single pixel on the screen. Some fantastic resources I used were:</p>
+<p>However, I severely underestimated the sheer amount of work required to get a good game going. My supervisor, Dr. Iain Martin, and I set out a goal of getting the core game done within 8-9 weeks, to allow enough time for revision, modification and other improvements. Since this was my first foray into learning both <strong>graphics programming</strong> and <strong>game development</strong>, <em>without the use of a commercial engine</em>, I ended up working maybe 12-15 hours a day, learning as I went along.</p>
+<p>The first couple weeks was spent getting up to speed with understanding OpenGL and the graphics pipeline. Some fantastic resources I used were:</p>
 <ul>
 <li><a href="https://learnopengl.com" target="_blank" rel="noreferrer">LearnOpenGL</a></li>
 <li><a href="https://www.opengl-tutorial.org/" target="_blank" rel="noreferrer">OpenGL-tutorial</a></li>
 <li><a href="https://www.youtube.com/watch?v=45MIykWJ-C4" target="_blank" rel="noreferrer">FreeCodeCamp&rsquo;s OpenGL Tutorials by Victor Gordon</a></li>
 </ul>
-<p>By the end of week 3, I had my first window displayed, my &ldquo;Hello World&rdquo; OpenGL triangle rendered, and a basic framework set up to let me start crafting my game.</p>
-<h2 id="picking-a-game-concept" class="relative group">Picking a Game Concept <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#picking-a-game-concept" aria-label="Anchor">#</a></span></h2><p>Early on, I created two gaming concepts that I&rsquo;d be interested in making, each with their pros and cons:</p>
-<ol>
-<li><strong>A racing game</strong> not dissimilar to MarioKart or F-Zero, where players could race each other or AI opponents around a track.
+<h2 id="specifications" class="relative group">Specifications <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#specifications" aria-label="Anchor">#</a></span></h2><p>The game is a 3D Dungeon Crawler First Person Shooter, inspired by Doom.
+It, and it&rsquo;s engine, which I titled &ldquo;Shadow&rdquo; (just a working title that ended up sticking), was entirely coded using <strong>C++ 17</strong> and <strong>GLSL (OpenGL Shading Language)</strong>. Several other C++ libraries were used for different purposes, as detailed below.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Library</th>
+          <th>Usage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>GLAD</strong></td>
+          <td>OpenGL library that manages functions and pointers for OpenGL, allowing for flexible cross-platform development.</td>
+      </tr>
+      <tr>
+          <td><strong>GLFW</strong></td>
+          <td>OpenGL library that manages windowing and input/output handling for the engine implementation.</td>
+      </tr>
+      <tr>
+          <td><strong>GLM</strong></td>
+          <td>OpenGL Mathematics library that provides classes and functions that operate with the OpenGL framework. Used to support matrix, vector and shader calculations.</td>
+      </tr>
+      <tr>
+          <td><strong>ImGui</strong></td>
+          <td>Lightweight C++ graphical user interface (GUI) library that operates within the 3D graphics pipeline. It outputs interfaces via vertex buffers, allowing for fast rendering implementations.</td>
+      </tr>
+      <tr>
+          <td><strong>irrKlang</strong></td>
+          <td>Cross platform sound library that manages sound playback throughout the game engine implementation.</td>
+      </tr>
+      <tr>
+          <td><strong>stb</strong></td>
+          <td>Lightweight, single file C++ library used to load image data, in this case textures, into our game implementation.</td>
+      </tr>
+      <tr>
+          <td><strong>tmxlite</strong></td>
+          <td>Lightweight C++ library that enables easy parsing of data from the .tmx files that were used to configure level data.</td>
+      </tr>
+  </tbody>
+</table>
+<p>Additionally, the <strong>Tiled Map Editor</strong> was used to create the .tmx files, which holds the layout data necessary for generating level terrain (walls, ceilings and floors), their corresponding textures, enemy spawns and item locations. It allows for easy modification and reconfiguration of the level design, and facilitates easy addition of new textures and enemy types.</p>
+<h2 id="features" class="relative group">Features <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a></span></h2><p>The following are some of the more complex features I integrated into the game system.</p>
+<h3 id="enemy-factory" class="relative group">Enemy Factory <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#enemy-factory" aria-label="Anchor">#</a></span></h3><p>Essentially a combination between two design patterns, the <strong>Factory Design Pattern</strong> and the <strong>Decorator Design Pattern</strong>.</p>
+<p>A base enemy class was defined, along with its parameters and functionalities that all enemy instances will share.
+A particular enemy type is then created using the Factory Design Pattern, which then decorates the base enemy class with specific logic based on the enemy type (eg, zombie logic vs ogre logic.)</p>
+<h3 id="animation-via-texture-cycling" class="relative group">Animation via Texture Cycling <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#animation-via-texture-cycling" aria-label="Anchor">#</a></span></h3><p>Animation in modern games is usually handled via a process called rigging, where a 3D model of an entity is created and then manipulated via some movement to its skeletal frame. <strong>This was unfortunately not possible given the time constraints for development.</strong></p>
+<p>Fear not! I still managed to animate enemies via a process I called <strong>texture cycling</strong>. Think about how old school cartoons were made. Textures were rendered onto a simple quad, and then cycled through a preset sequence, at pre-defined intervals, to create animations.</p>
+<h3 id="billboarding-sprites" class="relative group">Billboarding Sprites <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#billboarding-sprites" aria-label="Anchor">#</a></span></h3><p>Since the enemies and other objects were rendered onto 2D quads, I utilised billboarding to give what were 2D objects the iillusion that they exist in 3D space.</p>
+<p>This was achieved by rotating the object&rsquo;s quad to always face the player&rsquo;s point of view (the camera&rsquo;s front vector.)
+The quad&rsquo;s normal vectors were also dynamically recalculated to always ensure proper lighting calculations and effects.</p>
+<h3 id="dynamic-lighting-effects" class="relative group">Dynamic Lighting Effects <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#dynamic-lighting-effects" aria-label="Anchor">#</a></span></h3><p>Usually, techniques such as normal mapping, shadow mapping and ambient occlusion are commonly utilised to improve graphical fidelity.
+Due to time constraints, I chose to:</p>
 <ul>
-<li>Pros:</li>
-<li>Cons:</li>
+<li>reduce ambient lighting to give the game a dark, &ldquo;spooky&rdquo; feel.</li>
+<li>Used the Phong lighting model to give the player a spotlight that illuminates a small section of the screen. This serves as the main exploration tool.</li>
+<li>Set the lighting matrices to dynamically update based on the player&rsquo;s location and direction vector. Therefore the player is able to &ldquo;cast a light&rdquo; on all surfaces, regardless of their position and direction.</li>
+<li>The spotlight was also attenuated (has a distance falloff) using a quadratic model.</li>
 </ul>
-</li>
-<li><strong>A Dungeon Crawler FPS</strong> inspired by classics such as Wolfenstein and Doom, where a player character explores a dark dungeon while fighting off enemies.
+<h3 id="breath-first-search-bfs-pathfinding" class="relative group">Breath First Search (BFS) Pathfinding <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#breath-first-search-bfs-pathfinding" aria-label="Anchor">#</a></span></h3><p>In order to let the enemies chase after our player character, some type of pathfinding algorithm was needed.</p>
+<p>I chose to utilise a BFS graph traversal algorithm, which iterates over all possibilities between the root node (enemy&rsquo;s current location) and the goal node (player&rsquo;s current location) in order to find the shortest path to the player.
+While not as efficient in time complexity (it has a linear time efficiency of O(V+E)), it was simple to implement and was more memory efficient when compared to some other algorithms.</p>
+<h3 id="collision-detection" class="relative group">Collision Detection <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#collision-detection" aria-label="Anchor">#</a></span></h3><p>Collision in games is often handled via Axis Aligned Boundary  Box (AABB) collision, due to its calculation efficiency.
+I defined a bounding box for the player character, and created a system that checks if that box contacts any of the level&rsquo;s terrain meshes.</p>
+<p>If collision is detected, player movement past the wall’s axis of orientation is stopped, but movement along it is allowed. This ensured two mechanics that significantly improved the fluidity of movement during gameplay:</p>
 <ul>
-<li>Pros:</li>
-<li>Cons:</li>
+<li>The player contacts the wall but does not get stuck onto it.</li>
+<li>The player can slide along the wall, meaning that player movement does not suddenly come to a dead stop.</li>
 </ul>
-</li>
-</ol>
-<p>Eventually, I settled on the Doom-like FPS game, and set about making the game work.</p>
-<h2 id="figuring-out-fps-games" class="relative group">Figuring out FPS Games <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#figuring-out-fps-games" aria-label="Anchor">#</a></span></h2><p>Let me be the first to say, <strong>your first game will probably be one of the most fun, yet challenging things you work on.</strong> </br></p>
-<p>FPS games are among the most complex type of games to create, especially without the use of an engine. They need many complex systems to all work in tandem, and the best way to structure this is to look at <em><strong>Design Patterns.</strong></em></p>
+<h3 id="optimised-level-creation-this-is-heavily-summarised-since-the-actual-logic-i-did-was-really-complex" class="relative group">Optimised Level Creation (<em>this is heavily summarised, since the actual logic I did was really complex.</em>) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#optimised-level-creation-this-is-heavily-summarised-since-the-actual-logic-i-did-was-really-complex" aria-label="Anchor">#</a></span></h3><p>The game&rsquo;s levels were generated using the Tiled Map Editor as a tool to allow easy modification. Tiled stores the layout data in essentially what is a 2D integer array of x-z positions in each layer. I used this, along with the humble cube, to generate the 3D levels.</p>
+<p>I created a system using <strong>OpenGL&rsquo;s vertex winding order</strong> that would read the array data to determine if a cube should be placed at that position. I then had an algorithm check which faces of the cube would be obstructed by neighbouring terrain, i.e. if a cube face was side by side to another cube face, then we didn&rsquo;t need to render either since we couldn&rsquo;t see them.
+The vertices of the unblocked faces, along with their corresponding texture IDs, were then passed into a mesh.</p>
+<p>This meant that the entire level could be created with a single draw call, massively improving runtime performance and efficiency.</p>
 
     </section>
     <footer class="pt-8">
@@ -479,7 +533,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="https://varendraaa.github.io/"
+  data-url="http://localhost:1313/"
 >
   <div
     id="search-modal"
