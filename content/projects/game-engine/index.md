@@ -1,7 +1,7 @@
 ---
 title: "3D Game Engine Development"
-description: ""
-summary: "'"
+description: "Developing a custom game and its engine from scratch."
+summary: "Developing a custom game and its engine from scratch."
 date: 2024-08-21
 lastmod: 2024-10-19
 layout: "simple"
