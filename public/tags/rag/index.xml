@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rag on VS Codes</title>
+    <link>https://varendraaa.github.io/tags/rag/</link>
+    <description>Recent content in Rag on VS Codes</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 19 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://varendraaa.github.io/tags/rag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D Game Engine Development</title>
+      <link>https://varendraaa.github.io/projects/game-engine/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://varendraaa.github.io/projects/game-engine/</guid>
+      <description>Developing a custom game and its engine from scratch.</description>
+    </item>
+    <item>
+      <title>Computer Vision using Deep Learning - Binary Classification</title>
+      <link>https://varendraaa.github.io/projects/computer-vision-binary/</link>
+      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://varendraaa.github.io/projects/computer-vision-binary/</guid>
+      <description>This project evaluates the performance of neural networks in medical image analysis for disease detection.</description>
+    </item>
+    <item>
+      <title>Weather Event App - API Mashup</title>
+      <link>https://varendraaa.github.io/projects/api-mashup/</link>
+      <pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://varendraaa.github.io/projects/api-mashup/</guid>
+      <description>&#39;</description>
+    </item>
+  </channel>
+</rss>

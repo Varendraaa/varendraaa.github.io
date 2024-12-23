@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://varendraaa.github.io/sitemap.xml
