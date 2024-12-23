@@ -23,7 +23,7 @@
 [[main]]
   name = "CV"
   pageRef = "CV"
-  url = "/cv/cv_2024.pdf"
+  url = "/cv/cv2024.pdf"
   weight = 30
 
 [[main]]
