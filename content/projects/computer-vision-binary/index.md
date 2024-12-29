@@ -1,16 +1,16 @@
 ---
-title: "Computer Vision using Deep Learning - Binary Classification"
+title: "Computer Vision using Deep Learning - Disease Detection"
 description: "This project evaluates the performance of neural networks in medical image analysis for disease detection."
 summary: "This project evaluates the performance of neural networks in medical image analysis for disease detection."
 date: 2024-03-16
 lastmod: 2024-12-19
 layout: "simple"
 showTableofContents: false
-categories: ["software"]
-tags: ["web-scraping", "nomic", "chunkig", "retriever", "rag", "gabriel-garcia-marquez", "llm", "langchain", "chromadb", "retrieval-augmented-generation", "ollama", "llama3-1", "llama3-2"]
+#categories: 
+#tags: 
 ---
 
-*Using Convoluted Neural Networks to detect signs of diseases in medical images.*
+*Using Convoluted Neural Networks to detect signs of infectious diseases in medical images.*
 
 {{< alert "info" >}} 
 I'm currently redoing this project, based on some improvements shown to me by my classmate, Hannah Gordon. I'm also planning to separate the binary classification and multi-class classification into seperate posts for brevity's sake.

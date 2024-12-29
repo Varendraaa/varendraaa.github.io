@@ -4,12 +4,15 @@ description: "Developing a custom game and its engine from scratch."
 summary: "Developing a custom game and its engine from scratch."
 date: 2024-08-21
 lastmod: 2024-10-19
-layout: "simple"
-showTableofContents: false
+#layout: "simple"
+showTableofContents: true
 thumbnail: "game1.png"
-feature: "game1.png"
-categories: ["software"]
-tags: ["web-scraping", "nomic", "chunkig", "retriever", "rag", "gabriel-garcia-marquez", "llm", "langchain", "chromadb", "retrieval-augmented-generation", "ollama", "llama3-1", "llama3-2"]
+tags: 
+- C++
+- OpenGL
+- Game Development
+
+
 ---
 
 *Developing a custom game and its engine from scratch.*
@@ -25,7 +28,7 @@ Since my thesis was over 17 000 words, this project post is not meant to be a de
 I had a couple projects that I was interested in doing for my thesis project:
 - A Spacecraft Mission Visualiser program, for S.T.A.R Dundee's PANGU project.
 - A Computer Vision System for Soil Evaluation (the old geoscientist in me was screaming "**Put me in chief!**")
-- 3D Game Engine Development
+- Create a 3D Game, and its underlying engine code.
 
 I ultimately decided to go with the game engine development for the following reasons:
 1. It was something I'd be excited to develop, and therefore avoid falling into the trap that is *lack of motivation.*
@@ -63,8 +66,8 @@ Additionally, the **Tiled Map Editor** was used to create the .tmx files, which 
 # Features
 The following are some of the more complex features I integrated into the game system.
 
-###  Optimised Level Creation (*this is heavily summarised, since the actual logic I did was really complex.*)
-The game's levels were generated using the Tiled Map Editor as a tool to allow easy modification. Tiled stores the layout data in essentially what is a 2D integer array of x-z positions in each layer. I used this, along with the humble cube, to generate the 3D levels.
+###  Optimised Level Creation
+The game's levels were generated using the Tiled Map Editor as a tool to allow easy modification. Tiled stores the layout data in essentially what is a 2D integer array of x-z positions in different object layers. I used this, along with the humble cube, to generate the 3D levels.
 
 ```c
 <layer id="1" name="Walls" width="40" height="30">
@@ -85,13 +88,13 @@ Each occurrence of the **number 1** in the above 40 x 30 array indicates the pre
 
 To address the removal of unneeded geometry, that would be invisible to the player, I created a system using **OpenGL's vertex winding order**. In OpenGL, triangle primitives have two faces, a front face and a back face. The face type is determined by the order of the three vertices that make up the triangle, and by default, the front face is determined if the winding order of the vertices are counterclockwise.
 
-![Image: Winding Orders of OpenGL Triangle Primitives](openglWinding1.png)
-
-// add triangle image here
+![Image: Winding Orders of OpenGL Triangle Primitives](openglWinding1.png "OpenGL uses winding orders to define front and back faces of surfaces.")
 
 I then had an algorithm check which faces of the cube would be obstructed by neighbouring terrain, i.e. if a cube face was side by side to another cube face, then we didn't need to render either since we couldn't see them. If there was no obstruction, the algorithm adds the vertices of the unblocked faces, along with their corresponding texture IDs, were then added into a mesh before being passed to the vertex buffer.
 
-![Image: Vertices being added to mesh](openglWinding2.png)
+![Image: Vertices being added to mesh](openglWinding2.png "Calculating the vertices to be added to the terrain mesh.")
+
+//talk about the texture ID being passed and the texture mapping
 
 This meant that the entire level could be created with a single draw call, massively improving runtime performance and efficiency.
 
@@ -101,17 +104,18 @@ Essentially a combination between two design patterns, the **Factory Design Patt
 A base enemy class was defined, along with its parameters and functionalities that all enemy instances will share.
 A particular enemy type is then created using the Factory Design Pattern, which then decorates the base enemy class with specific logic based on the enemy type (eg, zombie logic vs ogre logic.) 
 
-![Image: UML Diagram for the Enemy Factory setup](enemyFactory.png)
+![Image: UML Diagram for the Enemy Factory setup](enemyFactory.png "UML Diagram for the Enemy Factory setup.")
 
 ### Animation via Texture Cycling
 Animation in modern games is usually handled via a process called rigging, where a 3D model of an entity is created and then manipulated via some movement to its skeletal frame. **This was unfortunately not possible given the time constraints for development.**
 
-Fear not! I still managed to animate enemies via a process I called **texture cycling**. Think about how old school cartoons were made. Textures were rendered onto a simple quad, and then cycled through a preset sequence, at pre-defined intervals, to create animations.
+Fear not! I still managed to animate enemies via a process I called **texture cycling**. Think about how old school cartoons or stop motion photography. Textures were rendered onto a simple quad, and then cycled through a preset sequence, at pre-defined intervals, to create animations.
 
-![Image: GIF explaining Texture Cycling](zombie.png)
+![Image: GIF explaining Texture Cycling](zombie.png "Spritesheet of an animated zombie attack.")
 
-![Image: GIF explaining Texture Cycling](zombie.gif)
+![Image: GIF explaining Texture Cycling](zombie.gif "The attack, animated in practice.")
 
+The above example was created using Blender, with a camera set directly in front of the model. At predefined intervals, the model's animation was played, and Blender captured images of the model at that point.
 
 ### Billboarding Sprites
 Since the enemies and other objects were rendered onto 2D quads, I utilised billboarding to give what were 2D objects the iillusion that they exist in 3D space.

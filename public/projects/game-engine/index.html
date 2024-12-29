@@ -103,12 +103,9 @@
     <meta property="article:section" content="projects">
     <meta property="article:published_time" content="2024-08-21T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-10-19T00:00:00+00:00">
-    <meta property="article:tag" content="Web-Scraping">
-    <meta property="article:tag" content="Nomic">
-    <meta property="article:tag" content="Chunkig">
-    <meta property="article:tag" content="Retriever">
-    <meta property="article:tag" content="Rag">
-    <meta property="article:tag" content="Gabriel-Garcia-Marquez">
+    <meta property="article:tag" content="C&#43;&#43;">
+    <meta property="article:tag" content="OpenGL">
+    <meta property="article:tag" content="Game Development">
 
   
   <meta name="twitter:card" content="summary">
@@ -137,10 +134,10 @@
     
     "dateModified": "2024-10-19T00:00:00\u002b00:00",
     
-    "keywords": ["web-scraping","nomic","chunkig","retriever","rag","gabriel-garcia-marquez","llm","langchain","chromadb","retrieval-augmented-generation","ollama","llama3-1","llama3-2"],
+    "keywords": ["C++","OpenGL","Game Development"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1569"
+    "wordCount": "1645"
   }
   </script>
     
@@ -163,14 +160,8 @@
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/categories/software/",
-       "name": "Software",
-       "position": 3
-     },
-     {
-       "@type": "ListItem",
        "name": "3 D Game Engine Development",
-       "position": 4
+       "position": 3
      }
    ]
  }
@@ -369,15 +360,100 @@
     <div class="relative flex grow flex-col">
       <main id="main-content" class="grow">
         
-  <article class="max-w-full">
-    <header>
+  <article>
+    <header class="max-w-prose">
       
-      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
         3D Game Engine Development
       </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2024-08-21 00:00:00 &#43;0000 UTC">21 August 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
     </header>
-    <section class="prose mt-6 max-w-full dark:prose-invert">
-      <p><em>Developing a custom game and its engine from scratch.</em></p>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#specifications">Specifications</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#optimised-level-creation">Optimised Level Creation</a></li>
+        <li><a href="#enemy-factory">Enemy Factory</a></li>
+        <li><a href="#animation-via-texture-cycling">Animation via Texture Cycling</a></li>
+        <li><a href="#billboarding-sprites">Billboarding Sprites</a></li>
+        <li><a href="#dynamic-lighting-effects">Dynamic Lighting Effects</a></li>
+        <li><a href="#breath-first-search-bfs-pathfinding">Breath First Search (BFS) Pathfinding</a></li>
+        <li><a href="#collision-detection">Collision Detection</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <p><em>Developing a custom game and its engine from scratch.</em></p>
 <p>This is a very summarised overview of my MSc Thesis Project, done at the University of Dundee. It focuses on the creation and development of a Doom-like 3D FPS game, and its underlying engine, completely from first principles. It utilises simple, open-source C++ libraries to support some features, but every other aspect was done manually by the game code.</p>
 <p>Since my thesis was over 17 000 words, this project post is not meant to be a deep dive into how I solved or implemented some of the game features. If you&rsquo;re interested in reading it (it&rsquo;s a good read!), shoot me an email.</p>
 <p><strong><a href="https://github.com/Varendraaa/Shadow" target="_blank" rel="noreferrer">Check out the project code here!</a></strong></p>
@@ -385,7 +461,7 @@
 <ul>
 <li>A Spacecraft Mission Visualiser program, for S.T.A.R Dundee&rsquo;s PANGU project.</li>
 <li>A Computer Vision System for Soil Evaluation (the old geoscientist in me was screaming &ldquo;<strong>Put me in chief!</strong>&rdquo;)</li>
-<li>3D Game Engine Development</li>
+<li>Create a 3D Game, and its underlying engine code.</li>
 </ul>
 <p>I ultimately decided to go with the game engine development for the following reasons:</p>
 <ol>
@@ -506,7 +582,7 @@ It, and it&rsquo;s engine, which I titled &ldquo;Shadow&rdquo; (just a working t
 </figure>
 </p>
 <h1 id="features" class="relative group">Features <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#features" aria-label="Anchor">#</a></span></h1><p>The following are some of the more complex features I integrated into the game system.</p>
-<h3 id="optimised-level-creation-this-is-heavily-summarised-since-the-actual-logic-i-did-was-really-complex" class="relative group">Optimised Level Creation (<em>this is heavily summarised, since the actual logic I did was really complex.</em>) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#optimised-level-creation-this-is-heavily-summarised-since-the-actual-logic-i-did-was-really-complex" aria-label="Anchor">#</a></span></h3><p>The game&rsquo;s levels were generated using the Tiled Map Editor as a tool to allow easy modification. Tiled stores the layout data in essentially what is a 2D integer array of x-z positions in each layer. I used this, along with the humble cube, to generate the 3D levels.</p>
+<h3 id="optimised-level-creation" class="relative group">Optimised Level Creation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#optimised-level-creation" aria-label="Anchor">#</a></span></h3><p>The game&rsquo;s levels were generated using the Tiled Map Editor as a tool to allow easy modification. Tiled stores the layout data in essentially what is a 2D integer array of x-z positions in different object layers. I used this, along with the humble cube, to generate the 3D levels.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">layer</span> <span class="n">id</span><span class="o">=</span><span class="s">&#34;1&#34;</span> <span class="n">name</span><span class="o">=</span><span class="s">&#34;Walls&#34;</span> <span class="n">width</span><span class="o">=</span><span class="s">&#34;40&#34;</span> <span class="n">height</span><span class="o">=</span><span class="s">&#34;30&#34;</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="n">data</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#34;csv&#34;</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span>
@@ -582,10 +658,9 @@ It, and it&rsquo;s engine, which I titled &ldquo;Shadow&rdquo; (just a working t
     </picture>
   
 
-
+<figcaption class="text-center">OpenGL uses winding orders to define front and back faces of surfaces.</figcaption>
 </figure>
 </p>
-<p>// add triangle image here</p>
 <p>I then had an algorithm check which faces of the cube would be obstructed by neighbouring terrain, i.e. if a cube face was side by side to another cube face, then we didn&rsquo;t need to render either since we couldn&rsquo;t see them. If there was no obstruction, the algorithm adds the vertices of the unblocked faces, along with their corresponding texture IDs, were then added into a mesh before being passed to the vertex buffer.</p>
 <p>
 
@@ -636,9 +711,10 @@ It, and it&rsquo;s engine, which I titled &ldquo;Shadow&rdquo; (just a working t
     </picture>
   
 
-
+<figcaption class="text-center">Calculating the vertices to be added to the terrain mesh.</figcaption>
 </figure>
 </p>
+<p>//talk about the texture ID being passed and the texture mapping</p>
 <p>This meant that the entire level could be created with a single draw call, massively improving runtime performance and efficiency.</p>
 <h3 id="enemy-factory" class="relative group">Enemy Factory <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#enemy-factory" aria-label="Anchor">#</a></span></h3><p>Essentially a combination between two design patterns, the <strong>Factory Design Pattern</strong> and the <strong>Decorator Design Pattern</strong>.</p>
 <p>A base enemy class was defined, along with its parameters and functionalities that all enemy instances will share.
@@ -706,11 +782,11 @@ A particular enemy type is then created using the Factory Design Pattern, which 
     </picture>
   
 
-
+<figcaption class="text-center">UML Diagram for the Enemy Factory setup.</figcaption>
 </figure>
 </p>
 <h3 id="animation-via-texture-cycling" class="relative group">Animation via Texture Cycling <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#animation-via-texture-cycling" aria-label="Anchor">#</a></span></h3><p>Animation in modern games is usually handled via a process called rigging, where a 3D model of an entity is created and then manipulated via some movement to its skeletal frame. <strong>This was unfortunately not possible given the time constraints for development.</strong></p>
-<p>Fear not! I still managed to animate enemies via a process I called <strong>texture cycling</strong>. Think about how old school cartoons were made. Textures were rendered onto a simple quad, and then cycled through a preset sequence, at pre-defined intervals, to create animations.</p>
+<p>Fear not! I still managed to animate enemies via a process I called <strong>texture cycling</strong>. Think about how old school cartoons or stop motion photography. Textures were rendered onto a simple quad, and then cycled through a preset sequence, at pre-defined intervals, to create animations.</p>
 <p>
 
 
@@ -772,7 +848,7 @@ A particular enemy type is then created using the Factory Design Pattern, which 
     </picture>
   
 
-
+<figcaption class="text-center">Spritesheet of an animated zombie attack.</figcaption>
 </figure>
 </p>
 <p>
@@ -814,9 +890,10 @@ A particular enemy type is then created using the Factory Design Pattern, which 
     </picture>
   
 
-
+<figcaption class="text-center">The attack, animated in practice.</figcaption>
 </figure>
 </p>
+<p>The above example was created using Blender, with a camera set directly in front of the model. At predefined intervals, the model&rsquo;s animation was played, and Blender captured images of the model at that point.</p>
 <h3 id="billboarding-sprites" class="relative group">Billboarding Sprites <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#billboarding-sprites" aria-label="Anchor">#</a></span></h3><p>Since the enemies and other objects were rendered onto 2D quads, I utilised billboarding to give what were 2D objects the iillusion that they exist in 3D space.</p>
 <p>This was achieved by rotating the object&rsquo;s quad to always face the inverse direction of the player&rsquo;s point of view (the camera&rsquo;s front vector.)
 The quad&rsquo;s normal vectors were also dynamically recalculated to always ensure proper lighting calculations and effects.</p>
@@ -967,10 +1044,148 @@ I defined a bounding box for the player character, and created a system that che
 <li>The player can slide along the wall, meaning that player movement does not suddenly come to a dead stop.</li>
 </ul>
 
+      </div>
     </section>
-    <footer class="pt-8">
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="4476"
+        height="4476"
+        class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+        alt="Varendra Saith"
+        loading="lazy" decoding="async"
+        
+          src="/images/avatar_hu2865140588848490602.png"
+          srcset="/images/avatar_hu11894299080522045428.png 330w,/images/avatar_hu2865140588848490602.png 660w
+          
+            ,/images/avatar_hu5138205049100348085.png 1024w
+          
+          
+            ,/images/avatar_hu15721286383796252114.png 1320w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          Author
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          Varendra Saith
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">I&rsquo;m a Software Developer, focusing on creating fun projects and learn along the way. Ex-Geophysicist with 5 years in the energy industry.</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://github.com/varendraaa"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://linkedin.com/in/varendrasaith"
+          target="_blank"
+          aria-label="Linkedin"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
       
 
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="/projects/computer-vision-binary/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Computer Vision using Deep Learning - Disease Detection</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-03-16 00:00:00 &#43;0000 UTC">16 March 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
     </footer>
   </article>
 
