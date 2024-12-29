@@ -134,7 +134,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "943"
+    "wordCount": "931"
   }
   </script>
     
@@ -419,8 +419,7 @@ Each dataset was evaluated using three different networks:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="nf">model_1.compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="nf">keras.optimizers.SGD</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="m">0.001</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">              <span class="n">loss</span><span class="o">=</span><span class="s">&#39;binary_crossentropy&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">              <span class="n">metrics</span><span class="o">=</span><span class="n">[</span><span class="s">&#39;accuracy&#39;</span><span class="n">]</span><span class="p">)</span>
-</span></span></code></pre></div><p>// Add  Results  here
-
+</span></span></code></pre></div><p>
 
 
 
@@ -545,8 +544,7 @@ Each dataset was evaluated using three different networks:</p>
 </span></span><span class="line"><span class="cl"><span class="nf">model_dense.compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s">&#39;adam&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                    <span class="n">loss</span><span class="o">=</span><span class="s">&#39;binary_crossentropy&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                    <span class="n">metrics</span><span class="o">=</span><span class="n">[</span><span class="s">&#39;accuracy&#39;</span><span class="n">]</span><span class="p">)</span>
-</span></span></code></pre></div><p>// Add results here
-
+</span></span></code></pre></div><p>
 
 
 
@@ -873,8 +871,7 @@ The custom ConvNet achieved the best performance among the three models, with si
 </span></span><span class="line"><span class="cl"><span class="nf">model_custom.compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s">&#39;adam&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                     <span class="n">loss</span><span class="o">=</span><span class="s">&#39;categorical_crossentropy&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                     <span class="n">metrics</span><span class="o">=</span><span class="n">[</span><span class="s">&#39;accuracy&#39;</span><span class="n">]</span><span class="p">)</span>
-</span></span></code></pre></div><p>// Add results here</p>
-<p>Key Insights</p>
+</span></span></code></pre></div><p>Key Insights</p>
 <ol>
 <li>ConvNets Perform Better: Convolutional layers consistently outperformed dense-only networks in image-based tasks.</li>
 <li>Regularization Works: Dropout, batch normalization, and data augmentation reduced overfitting.</li>

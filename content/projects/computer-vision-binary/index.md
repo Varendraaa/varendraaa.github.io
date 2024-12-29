@@ -79,7 +79,7 @@ model_1.compile(optimizer=keras.optimizers.SGD(learning_rate=0.001),
               metrics=['accuracy'])
 ```
 
-// Add  Results  here
+
 ![Binary Base Model Accuracy](binaryBaseModelAccuracy.png "Binary Base Model Accuracy Plot")
 
 ![Binary Base Model Loss](binaryBaseModelLoss.png "Binary Base Model Loss Plot")
@@ -114,7 +114,6 @@ model_dense.compile(optimizer='adam',
 
 ```
 
-// Add results here
 ![Binary Base Model Accuracy](binaryDenseModelAccuracy.png "Binary Dense Model Accuracy Plot")
 
 ![Binary Dense Model Loss](binaryDenseModelLoss.png "Binary Dense Model Loss Plot")
@@ -276,8 +275,6 @@ model_custom.compile(optimizer='adam',
                      metrics=['accuracy'])
 
 ```
-
-// Add results here
 
 Key Insights
 1. ConvNets Perform Better: Convolutional layers consistently outperformed dense-only networks in image-based tasks.
