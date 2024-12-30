@@ -9,6 +9,13 @@
     <lastBuildDate>Thu, 19 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Creating a Game using ThreeJS</title>
+      <link>http://localhost:1313/projects/aviator-threejs/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/aviator-threejs/</guid>
+      <description>This project showcases the creation of a simple web game using ThreeJS.</description>
+    </item>
+    <item>
       <title>3D Game Engine Development</title>
       <link>http://localhost:1313/projects/game-engine/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
