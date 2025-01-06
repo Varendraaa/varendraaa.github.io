@@ -6,7 +6,7 @@ date: 2024-08-21
 lastmod: 2024-10-19
 #layout: "simple"
 showTableofContents: true
-thumbnail: "game1.png"
+thumbnail: "feature.png"
 tags: 
 - C++
 - OpenGL
