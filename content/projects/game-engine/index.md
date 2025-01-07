@@ -94,8 +94,6 @@ I then had an algorithm check which faces of the cube would be obstructed by nei
 
 ![Image: Vertices being added to mesh](openglWinding2.png "Calculating the vertices to be added to the terrain mesh.")
 
-//talk about the texture ID being passed and the texture mapping
-
 This meant that the entire level could be created with a single draw call, massively improving runtime performance and efficiency.
 
 ### Enemy Factory
