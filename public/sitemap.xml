@@ -4,6 +4,20 @@
   
     
       <url>
+            <loc>http://localhost:1313/projects/aviator-threejs/</loc>
+            <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/projects/</loc>
+            <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
             <loc>http://localhost:1313/projects/game-engine/</loc>
             <lastmod>2024-10-19T00:00:00+00:00</lastmod>
           </url>
@@ -17,8 +31,8 @@
   
     
       <url>
-            <loc>http://localhost:1313/projects/</loc>
-            <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+            <loc>http://localhost:1313/projects/megaman-like/</loc>
+            <lastmod>2024-10-19T00:00:00+00:00</lastmod>
           </url>
     
   
@@ -36,12 +50,6 @@
             <loc>http://localhost:1313/about/</loc>
             <lastmod>2024-08-06T00:00:00+00:00</lastmod>
           </url>
-    
-  
-    
-  
-    
-  
     
   
     
@@ -76,10 +84,16 @@
     
   
     
+  
+    
+  
+    
       <url>
             <loc>http://localhost:1313/projects/api-mashup/</loc>
             <lastmod>2024-12-19T00:00:00+00:00</lastmod>
           </url>
+    
+  
     
   
 </urlset>

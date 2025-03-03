@@ -14,3 +14,7 @@ tags:
 
 
 ---
+
+As a kid, my favourite games were the Megaman Battle Network and the Megaman Zero iterations of Capcom's hit series. While the story and character of Megaman Zero was amazing (particularly the ending of Megaman Zero 4!), the game mechanics of the Battle Network series is a prime example of introducing novel game mechanics.
+
+In the Battle Network series, you 
